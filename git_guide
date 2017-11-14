@@ -1,0 +1,28 @@
+Denne guide skal sikre, at vi alle sammen arbejde i vores egen branch og kun poster til vores master, når koden er 'godkendt'.
+
+Link til en 21 minutters Youtube: https://www.youtube.com/watch?v=yXT1ElMEkW8
+
+
+  1. Åben terminal/gitbash
+  2. 'cd' hen til den projektet på din computer
+  
+  3. For at lave en branch
+  Kommando: git branch "navnet på branchen"
+  
+  4. For at gå til branch/ændre til den branch du gerne vil skrive i
+  Kommando: git checkout "navnet på din branch"
+  
+  5. Når du laver ændringer i din branch og de skal committes 
+  Kommando: git commit -a -m "en kommentar om ændringerne" 
+  (Alle commiter bare amok, da vi derved kan gå tilbage og finde et commit hvor det virkede. Se det som at gemme)
+  
+  6. Push for at sende ændringerne til Github 
+  Kommando: git push --set-upstream origin "branch navnet"
+  (bare skriv "git push", så giver terminalen jer kommandoen)
+  
+  7. Pull for at hente ændringer fra Github
+  Kommando: git pull
+  
+  8. Status for at se hvilken branch du er på
+  Kommando: git status
+  
