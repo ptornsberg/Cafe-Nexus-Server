@@ -22,6 +22,7 @@ import java.sql.SQLException;
  *
  * This is our user endpoint, which handles the input given from the client regarding user-creation.
  */
+
 @Path("/users")
 public class UserEndpoint {
 

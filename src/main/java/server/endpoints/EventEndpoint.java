@@ -37,7 +37,7 @@ import java.util.Properties;
 /**
  * Created by Filip on 10-10-2017.
  */
-
+@Secured
 @Path("/events")
 public class EventEndpoint {
 
@@ -51,6 +51,7 @@ public class EventEndpoint {
 
     The method return response status codes and converts the ArrayList "allEvents" from GSON to JSON
      */
+
     @GET
     public Response getAllEvents(){
 
@@ -112,7 +113,7 @@ public class EventEndpoint {
         log.writeLog(this.getClass().getName(),this.getClass(),("getEvent was successful - " +
                 "User active was: " + AuthenticationFilter.userEmailByToken),0);
 
-        return Response.status(200).type("json/application").entity(new Gson().toJson(event)).build();
+        return Response.status(200).type("text/plain").entity(new Gson().toJson(event)).build();
 
     }
 
