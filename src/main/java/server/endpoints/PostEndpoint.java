@@ -29,6 +29,7 @@ import java.util.ArrayList;
 /**
  * Created by Filip on 10-10-2017.
  */
+@Secured
 @Path("/posts")
 public class PostEndpoint {
     ContentController contentController = new ContentController();

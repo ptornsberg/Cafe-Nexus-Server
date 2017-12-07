@@ -22,7 +22,7 @@ import java.sql.SQLException;
  *
  * This is our user endpoint, which handles the input given from the client regarding user-creation.
  */
-
+@Secured
 @Path("/users")
 public class UserEndpoint {
 
@@ -66,7 +66,7 @@ public class UserEndpoint {
      * @param user_id
      * @return The method returns a response that converts the "user" from GSON to JSON.
      */
-
+    @Secured
     @GET
     @Path("{id}")
     public Response getUser(@PathParam("id") int user_id) {

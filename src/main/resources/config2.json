@@ -10,7 +10,7 @@
 {
   "DATABASE_HOST": "localhost",
   "DATABASE_PORT": "3306",
-  "DATABASE_NAME": "cafe_nexus",
+  "DATABASE_NAME": "rofl",
   "DATABASE_USER": "root",
   "DATABASE_PASSWORD": "R7fur3jx",
   "JWT_SECRET":"password"
