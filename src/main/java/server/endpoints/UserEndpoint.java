@@ -22,7 +22,7 @@ import java.sql.SQLException;
  *
  * This is our user endpoint, which handles the input given from the client regarding user-creation.
  */
-@Secured
+
 @Path("/users")
 public class UserEndpoint {
 
@@ -38,6 +38,7 @@ public class UserEndpoint {
 
     Return response converts the ArrayList "allUsers" from GSON to JSON
      */
+    @Secured
     @GET
     public Response getAllUsers() {
 
